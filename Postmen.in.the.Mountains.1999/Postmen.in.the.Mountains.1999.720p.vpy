@@ -54,7 +54,7 @@ if fix_borders:
     fixed = awf.FixBrightnessProtect2(fixed, column=[clip.width-1], adj_column=[23])
     # fixed = awf.FillBorders(clip=fixed,left=1,right=1,planes=[1,2])
     fixed = awf.bbmod(fixed, top=0, bottom=0, left=1, right=1, blur=999)
-    fixed = ptf.dlreder(fixed,'dirty_lines.csv')
+    fixed = ptf.dlreder(fixed,clip,'dirty_lines.csv')
 else:
     fixed = clip
 
