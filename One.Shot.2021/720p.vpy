@@ -52,7 +52,7 @@ clipf = awf.ReplaceFrames(clipf, mm, mappings=(
 mm = awf.LumaMaskMerge(clipf, gr, threshold=25, invert=True, scale_inputs=True)
 em = kgf.retinex_edgemask(clipf)
 mm = core.std.MaskedMerge(mm, clipf, em)
-clipf = awf.ReplaceFrames(clipf, mm, mappings='[13603 13781] [29129 29163] [94552 94993] [105895 105934] [105954 106138] [114721 114729]')
+clipf = awf.ReplaceFrames(clipf, mm, mappings='[13603 13970] [29129 29163] [94552 94993] [105895 105934] [105954 106138] [114721 114729]')
 
 #db = core.neo_f3kdb.Deband(clipf, range=8, y=80, preset='luma/nograin')
 #gr = adptvgrnMod(db, size=1, grain_chroma=False, static=False)
@@ -66,7 +66,7 @@ clipf = awf.ReplaceFrames(clipf, mm, mappings='[102142 102279] [120321 120431] [
 mm = awf.LumaMaskMerge(clipf, gr, threshold=150, invert=True, scale_inputs=True)
 em = kgf.retinex_edgemask(clipf)
 mm = core.std.MaskedMerge(mm, clipf, em)
-clipf = awf.ReplaceFrames(clipf, mm, mappings='[108405 108519] [110252 110335] [110655 111327] [127442 129744]')
+clipf = awf.ReplaceFrames(clipf, mm, mappings='[13971 14431] [108405 108519] [110252 110335] [110655 111327] [127442 129744]')
 
 #db = core.neo_f3kdb.Deband(clipf, range=8, y=80, preset='luma/nograin')
 #gr = adptvgrnMod(db, size=1, grain_chroma=False, static=False)
